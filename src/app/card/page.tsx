@@ -6,7 +6,7 @@ import { Canvas } from "@react-three/fiber";
 
 const Page = () => {
   return (
-    <div className="relative bg-red-100 h-[80vh] w-full mx-[1rem] rounded-2xl text-white p-4 bg-opacity-30 flex justify-center items-center">
+    <div className=" relative bg-red-100 h-[80vh] rounded-2xl text-white p-4 bg-opacity-30 flex justify-center items-center">
       <div className=" w-full h-full p-8 bg-opacity-30 text-6xl">삼성카드</div>
       <div className="w-full h-full absolute">
         <Canvas shadows>

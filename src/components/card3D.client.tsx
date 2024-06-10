@@ -3,14 +3,14 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Html, OrbitControls } from "@react-three/drei";
-import { Euler, Mesh } from "three";
+import { DirectionalLight, Euler, Mesh } from "three";
 
 const DoubleSidedCard = () => {
   const cardRef = useRef<Mesh>(null);
+  const lightRef = useRef<DirectionalLight>(null);
   const [flipped, setFlipped] = useState(false);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
-  // 마우스 움직임을 따라 시점 조정
   useEffect(() => {
     const handleMouseMove = (event: MouseEvent) => {
       setMousePos({ x: event.clientX, y: event.clientY });
@@ -21,12 +21,10 @@ const DoubleSidedCard = () => {
     };
   }, []);
 
-  // 카드 뒤집기
   const handleCardClick = () => {
     setFlipped(!flipped);
   };
 
-  // 카드 회전 및 마우스 위치에 따라 시점 조정
   useFrame(() => {
     if (cardRef.current) {
       const rotationY = flipped ? Math.PI : 0;
@@ -40,6 +38,14 @@ const DoubleSidedCard = () => {
         (targetRotation.x - cardRef.current.rotation.x) * 0.1;
       cardRef.current.rotation.y +=
         (targetRotation.y - cardRef.current.rotation.y) * 0.1;
+    }
+
+    if (lightRef.current) {
+      lightRef.current.position.set(
+        (mousePos.x / window.innerWidth - 0.5) * (flipped ? -10 : 10),
+        (mousePos.y / window.innerHeight - 0.5) * -10,
+        flipped ? -5 : 5
+      );
     }
   });
 
@@ -55,8 +61,7 @@ const DoubleSidedCard = () => {
           >
             앞면 html 입니다.
             <div className="w-[4rem] bg-yellow-300 flex items-center justify-center">
-              {" "}
-              설명{" "}
+              설명
             </div>
           </div>
         </Html>
@@ -76,6 +81,7 @@ const DoubleSidedCard = () => {
           </div>
         </Html>
       )}
+      <directionalLight ref={lightRef} position={[3, 3, 3]} intensity={1} />
     </mesh>
   );
 };
