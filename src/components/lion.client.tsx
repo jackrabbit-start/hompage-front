@@ -2,7 +2,7 @@
 
 import React, { useRef, useEffect } from "react";
 import { Canvas, ThreeElements, useFrame, useThree } from "@react-three/fiber";
-import { OrbitControls, useGLTF } from "@react-three/drei";
+import { Html, OrbitControls, useGLTF } from "@react-three/drei";
 import { AnimationMixer } from "three";
 
 const Lion = (props: ThreeElements["mesh"]) => {
@@ -35,7 +35,13 @@ const Lion = (props: ThreeElements["mesh"]) => {
       position={[-3, -5, -30]}
       scale={[0.2, 0.2, 0.2]}
       rotation={[0, (Math.PI / 2) * 3, 0]}
-    />
+    >
+      <Html position={[10, 50, 50]}>
+        <div className="w-[3rem] h-[1.5rem] rounded text-xs bg-black flex items-center justify-center">
+          김성현
+        </div>
+      </Html>
+    </primitive>
   );
 };
 

@@ -2,7 +2,7 @@
 
 import React, { useRef, useEffect } from "react";
 import { Canvas, ThreeElements, useFrame, useThree } from "@react-three/fiber";
-import { OrbitControls, useGLTF } from "@react-three/drei";
+import { Html, OrbitControls, useGLTF } from "@react-three/drei";
 import { AnimationMixer } from "three";
 
 const Horse = (props: ThreeElements["mesh"]) => {
@@ -32,10 +32,16 @@ const Horse = (props: ThreeElements["mesh"]) => {
     <primitive
       ref={group}
       object={scene}
-      position={[-10, -5, 0]}
+      position={[-10, -7.9, 0]}
       scale={[6, 6, 6]}
       rotation={[0, 0, 0]}
-    />
+    >
+      <Html>
+        <div className="w-[3rem] h-[1.5rem] rounded text-xs bg-black flex items-center justify-center">
+          윤현지
+        </div>
+      </Html>
+    </primitive>
   );
 };
 

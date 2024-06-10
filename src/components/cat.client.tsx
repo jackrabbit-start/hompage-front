@@ -2,7 +2,7 @@
 
 import React, { useRef, useEffect } from "react";
 import { Canvas, ThreeElements, useFrame, useThree } from "@react-three/fiber";
-import { OrbitControls, useGLTF } from "@react-three/drei";
+import { Html, OrbitControls, useGLTF } from "@react-three/drei";
 import { AnimationMixer } from "three";
 
 const Cat = (props: ThreeElements["mesh"]) => {
@@ -35,7 +35,13 @@ const Cat = (props: ThreeElements["mesh"]) => {
       position={[-25, -5, -3]}
       scale={[9, 9, 9]}
       rotation={[0, Math.PI / 2, 0]}
-    />
+    >
+      <Html>
+        <div className="w-[3rem] h-[1.5rem] rounded text-xs bg-black flex items-center justify-center">
+          최찬솔
+        </div>
+      </Html>
+    </primitive>
   );
 };
 

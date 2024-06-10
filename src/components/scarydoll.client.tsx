@@ -2,7 +2,7 @@
 
 import React, { useRef, useEffect } from "react";
 import { Canvas, ThreeElements, useFrame, useThree } from "@react-three/fiber";
-import { OrbitControls, useGLTF } from "@react-three/drei";
+import { Html, OrbitControls, useGLTF } from "@react-three/drei";
 import { AnimationMixer } from "three";
 
 const ScaryDoll = (props: ThreeElements["mesh"]) => {
@@ -35,7 +35,13 @@ const ScaryDoll = (props: ThreeElements["mesh"]) => {
       position={[20, 5, -50]}
       rotate={[0, (Math.PI / 2) * 3, 0]}
       scale={[10, 10, 10]}
-    />
+    >
+      <Html position={[0.2, -0.1, 3]}>
+        <div className="w-[3rem] h-[1.5rem] rounded text-xs bg-black flex items-center justify-center">
+          정진우
+        </div>
+      </Html>
+    </primitive>
   );
 };
 
