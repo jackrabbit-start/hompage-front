@@ -1,0 +1,8 @@
+Model Information:
+* title:	low poly forest 2
+* source:	https://sketchfab.com/3d-models/low-poly-forest-2-2c8de37c9234451caa0d44e240b98c5a
+* author:	Digital screen official (https://sketchfab.com/ck212575)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

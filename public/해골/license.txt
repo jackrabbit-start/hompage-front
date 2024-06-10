@@ -1,0 +1,8 @@
+Model Information:
+* title:	Curious skeleton
+* source:	https://sketchfab.com/3d-models/curious-skeleton-757d9863b3504a75a439b2b99a530454
+* author:	J1G4R (https://sketchfab.com/jigar6102021)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

@@ -1,0 +1,8 @@
+Model Information:
+* title:	Indigo Park - Monster Lloyd
+* source:	https://sketchfab.com/3d-models/indigo-park-monster-lloyd-dcecdcd92d4e4f0baf0555931ad69d04
+* author:	MG Rips (https://sketchfab.com/MG_GameRips)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

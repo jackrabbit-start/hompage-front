@@ -1,0 +1,8 @@
+Model Information:
+* title:	Pixar Lamp
+* source:	https://sketchfab.com/3d-models/pixar-lamp-e8cb026a3978457bbdb3c9db4f7d4d8e
+* author:	Nayra_Fox (https://sketchfab.com/Nayra_Fox)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

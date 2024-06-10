@@ -1,0 +1,8 @@
+Model Information:
+* title:	MUZY - Bukbe
+* source:	https://sketchfab.com/3d-models/muzy-bukbe-8b31e73e80db4d9abdf28f092bde1a74
+* author:	MG Rips (https://sketchfab.com/MG_GameRips)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
